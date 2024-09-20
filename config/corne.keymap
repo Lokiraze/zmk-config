@@ -128,11 +128,11 @@ ZMK_TAP_DANCE(num_dance,
 )
 
 // smart-mouse, requires PR #1366
-// ZMK_TRI_STATE(smart_mouse,
-//    bindings = <&tog MSE>, <&none>, <&tog MSE>;
-//    ignored-key-positions = <LT1 LT3 RT1 RT2 RT3 RM1 RM2 RM3 RB1 RB3 RH0 RH1 RH2>;
-//    ignored-layers = <MSE>;
-//)
+ ZMK_TRI_STATE(smart_mouse,
+    bindings = <&tog MOUSE>, <&none>, <&tog MOUSE>;
+    ignored-key-positions = <LT1 LT3 RT1 RT2 RT3 RM1 RM2 RM3 RB1 RB3 RH0 RH1 RH2>;
+    ignored-layers = <MOUSE>;
+)
 
 // tap: space| hold: activate layer
 ZMK_HOLD_TAP(lt_spc,
