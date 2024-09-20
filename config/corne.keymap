@@ -134,12 +134,6 @@ ZMK_TRI_STATE(smart_mouse,
     ignored-layers = <MSE>;
 )
 
-ZMK_TRI_STATE(smart_hand,
-    bindings = <&tog HND>, <&none>, <&tog HND>;
-    ignored-key-positions = <LEFT_KEYS>;
-    ignored-layers = <HND>;
-)
-
 // tap: space| hold: activate layer
 ZMK_HOLD_TAP(lt_spc,
     flavor = "balanced";
