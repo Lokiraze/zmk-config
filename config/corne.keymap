@@ -21,12 +21,12 @@
 // Layer Definitions
 #define COLEMAK 0
 #define QWERTY 1
-#define GAMING 2
-#define NAV 3
-#define FN 4
-#define NUM 5
-#define SYS 6
-#define MOUSE 7
+// #define GAMING 2
+#define NAV 2
+#define FN 3
+#define NUM 4
+#define SYS 5
+#define MOUSE 6
 #define SYM 7
 
 #define XXX &none
@@ -224,17 +224,17 @@ ZMK_LAYER(qwerty,
 ) 
 
 
-ZMK_LAYER(gaming,
+//ZMK_LAYER(gaming,
      // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-          &kp TAB        &kp Q         &kp W         &kp E         &kp R         &kp T             &kp Y         &kp U         &kp I         &kp O         &kp P      &kp DEL
+ //         &kp TAB        &kp Q         &kp W         &kp E         &kp R         &kp T             &kp Y         &kp U         &kp I         &kp O         &kp P      &kp DEL
      // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-          &lt FN        &kp A         &kp S         &kp D         &kp F         &kp G             &kp H         &kp J         &kp K         &kp L         &kp SEMI      &kp SQT
+ //         &lt FN        &kp A         &kp S         &kp D         &kp F         &kp G             &kp H         &kp J         &kp K         &kp L         &kp SEMI      &kp SQT
      // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-          &kp LCTRL     &kp Z         &kp X         &kp C         &kp V         &kp B             &kp N         &kp M         &kp COMMA     &kp DOT      &kp EXCL        &kp ESC
+//          &kp LCTRL     &kp Z         &kp X         &kp C         &kp V         &kp B             &kp N         &kp M         &kp COMMA     &kp DOT      &kp EXCL        &kp ESC
      // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
-                                                    &lt FN         &kp SPACE     &kp RET         &lt FN         &kp SHFT       SMART_NUM
+//                                                    &lt FN         &kp SPACE     &kp RET         &lt FN         &kp SHFT       SMART_NUM
      //                                           ╰─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────╯
-) 
+//) 
 
 
 ZMK_LAYER(nav,
