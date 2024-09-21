@@ -1,6 +1,6 @@
 parse_config:
   zmk_additional_includes:
-    - "modules/helpers/include"
+    - "zmk-helpers/include"
 
 draw_config:
   footer_text: "urob/zmk-config"
