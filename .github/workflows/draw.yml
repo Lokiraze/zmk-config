@@ -6,6 +6,7 @@ on:
       - "config/*.keymap"
       - "config/*.dtsi"
       - "draw/config.yaml"
+      - ".github/workflows/draw.yml"
 
 jobs:
   draw:
@@ -15,4 +16,5 @@ jobs:
       config_path: 'draw/config.yaml'
       destination: 'both'
       west_config_path: './config/'
+      output_folder: 'draw'
       fail_on_error: true
