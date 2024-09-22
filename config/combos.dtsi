@@ -8,6 +8,7 @@
               ╰─────────────╯ ╰─────────────╯ */
 
 // use require-prior-idle-ms for combos
+// kato
 #undef COMBO_HOOK
 #define COMBO_HOOK require-prior-idle-ms = <250>;
 
