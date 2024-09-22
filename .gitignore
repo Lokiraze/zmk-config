@@ -1,0 +1,13 @@
+zmk/
+zmk-helpers/
+zephyr/
+modules/
+.west/
+
+# General
+.DS_Store
+.AppleDouble
+.LSOverride
+
+#draw
+draw/corne*
