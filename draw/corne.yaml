@@ -1,7 +1,7 @@
 layout: {qmk_keyboard: corne_rotated, qmk_layout: LAYOUT_split_3x6_3}
 layers:
   base:
-  - {t: 'Ctl+Alt+ $$mdi:apple-keyboard-shift$$', h: 'Ctl+Alt+ $$mdi:backspace-reverse-outline$$'}
+  - {t: 'Ctl+Alt+ $$mdi:apple-keyboard-shift$$', h: 'Ctl+Gui+ $$mdi:exit-to-app$$'}
   - Q
   - W
   - F
@@ -14,16 +14,16 @@ layers:
   - {t: ;, s: ':'}
   - Gui+ L
   - {t: ▽, type: trans}
-  - {t: A, h: '$$mdi:apple-keyboard-command$$'}
-  - {t: R, h: '$$mdi:apple-keyboard-option$$'}
-  - {t: S, h: '$$mdi:apple-keyboard-control$$'}
-  - {t: T, h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: A, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: R, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: S, h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: T, h: '$$mdi:apple-keyboard-command$$'}
   - G
   - M
-  - {t: N, h: '$$mdi:apple-keyboard-shift$$'}
-  - {t: E, h: '$$mdi:apple-keyboard-control$$'}
-  - {t: I, h: '$$mdi:apple-keyboard-option$$'}
-  - {t: O, h: '$$mdi:apple-keyboard-command$$'}
+  - {t: N, h: '$$mdi:apple-keyboard-command$$'}
+  - {t: E, h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: I, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: O, h: '$$mdi:apple-keyboard-option$$'}
   - {t: '''', s: '"'}
   - $$mdi:apple-keyboard-control$$
   - Z
@@ -44,7 +44,7 @@ layers:
   - {t: '$$mdi:backspace-outline$$', s: '$$mdi:backspace-reverse-outline$$'}
   - $$mdi:numeric$$
   qwerty:
-  - {t: 'Ctl+Alt+ $$mdi:apple-keyboard-shift$$', h: 'Ctl+Alt+ $$mdi:backspace-reverse-outline$$'}
+  - {t: 'Ctl+Alt+ $$mdi:apple-keyboard-shift$$', h: 'Ctl+Gui+ $$mdi:exit-to-app$$'}
   - Q
   - W
   - E
@@ -57,16 +57,16 @@ layers:
   - P
   - Gui+ L
   - {t: ▽, type: trans}
-  - {t: A, h: '$$mdi:apple-keyboard-command$$'}
-  - {t: S, h: '$$mdi:apple-keyboard-option$$'}
-  - {t: D, h: '$$mdi:apple-keyboard-control$$'}
-  - {t: F, h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: A, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: S, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: D, h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: F, h: '$$mdi:apple-keyboard-command$$'}
   - G
   - H
-  - {t: J, h: '$$mdi:apple-keyboard-shift$$'}
-  - {t: K, h: '$$mdi:apple-keyboard-control$$'}
-  - {t: L, h: '$$mdi:apple-keyboard-option$$'}
-  - {t: ;, h: '$$mdi:apple-keyboard-command$$', s: ':'}
+  - {t: J, h: '$$mdi:apple-keyboard-command$$'}
+  - {t: K, h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: L, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: ;, h: '$$mdi:apple-keyboard-option$$', s: ':'}
   - {t: '''', s: '"'}
   - $$mdi:apple-keyboard-control$$
   - Z
@@ -100,10 +100,10 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: '$$mdi:apple-keyboard-command$$', h: sticky}
   - {t: '$$mdi:apple-keyboard-option$$', h: sticky}
   - {t: '$$mdi:apple-keyboard-control$$', h: sticky}
   - {t: '$$mdi:apple-keyboard-shift$$', h: sticky}
+  - {t: '$$mdi:apple-keyboard-command$$', h: sticky}
   - $$mdi:brightness-7$$
   - Ctl+ END
   - {t: '$$mdi:arrow-left-bold$$', h: HOME}
