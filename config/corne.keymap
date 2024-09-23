@@ -232,11 +232,11 @@ ZMK_HOLD_TAP(tog_tap,
 #define CANCEL      &kp K_CANCEL             // cancel caps-word, num-word and smart-mouse
 #define DSK_PREV    &hmr RSHFT LG(LC(LEFT))  // previous desktop
 #define DSK_NEXT    &hmr LALT LG(LC(RIGHT))  // next     desktop
-#define PIN_WIN     &kp LG(LC(LS(Q)))        // pin window across desktops
+#define PIN_WIN     &kp LG(LC(LS(Q)))        // pin window across desktops (m)
 #define PIN_APP     &kp LG(LC(LS(A)))        // pin application across desktops
 #define DSK_MGR     &kp LA(GRAVE)            // desktop manager
 #define VOL_DOWN    &hmr LCTRL C_VOL_DN
-#define CA_DEL      &mt LC(LA(DEL)) meh      //hold: control alt delete | tap: meh
+#define CA_DEL      &mt LC(LG(ESC)) meh      //hold: control alt delete | tap: meh
 #define SPACE_NAV   &lt_spc NAV SPACE        //hold: NAV layer          | tap: space
 
 ZMK_CONDITIONAL_LAYER(system, FN NUM, SYS)  // FN + NUM --> SYS
@@ -248,7 +248,7 @@ ZMK_LAYER(base,
      // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
           CA_DEL        &kp Q         &kp W         &kp F         &kp P         &kp B             &kp J         &kp L         &kp U         &kp Y         &kp SEMI      &kp LG(L)
      // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-          &trans       &hml LGUI A   &hml LALT R   &hml LCTRL S  &hml LSHFT T  &kp G             &kp M         &hmr RSHFT N  &hmr LCTRL E  &hmr LALT I   &hmr LGUI O   &kp SQT
+          &trans       &hml LALT A   &hml LCTRL R   &hml LSHFT S  &hml LGUI T  &kp G             &kp M         &hmr LGUI N  &hmr RSHFT E  &hmr LCTRL I   &hmr LALT O   &kp SQT
      // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
           &kp LCTRL     &kp Z         &kp X         &kp C         &kp D         &kp V             &kp K         &kp H         &comma_morph  &dot_morph    &qexcl        &kp LALT
      // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
@@ -260,7 +260,7 @@ ZMK_LAYER(qwerty,
      // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
           CA_DEL        &kp Q         &kp W         &kp E         &kp R         &kp T             &kp Y         &kp U         &kp I         &kp O         &kp P      &kp LG(L)
      // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-          &trans       &hml LGUI A   &hml LALT S   &hml LCTRL D  &hml LSHFT F  &kp G             &kp H         &hmr RSHFT J  &hmr LCTRL K  &hmr LALT L   &hmr LGUI SEMI   &kp SQT
+          &trans       &hml LALT A   &hml LCTRL S   &hml LSHFT D  &hml LGUI F  &kp G             &kp H         &hmr LGUI J  &hmr RSHFT K  &hmr LCTRL L   &hmr LALT SEMI   &kp SQT
      // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
           &kp LCTRL     &kp Z         &kp X         &kp V         &kp B         &kp N             &kp M         &comma_morph  &dot_morph    &qexcl          &kp ESC      &kp LALT
      // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
@@ -273,7 +273,7 @@ ZMK_LAYER(nav,
      // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
           ___           ___           ___           &kp LC(F)     &swapper      &kp C_BRI_UP      &kp LC(HOME)  NAV_BSPC      NAV_UP        NAV_DEL       ___           ___
      // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-          ___           &sk LGUI      &sk LALT      &sk LCTRL     &sk LSHFT     &kp C_BRI_DN      &kp LC(END)   NAV_LEFT      NAV_DOWN      NAV_RIGHT     &kp RET       ___
+          ___           &sk LALT      &sk LCTRL      &sk LSHFT     &sk LGUI     &kp C_BRI_DN      &kp LC(END)   NAV_LEFT      NAV_DOWN      NAV_RIGHT     &kp RET       ___
      // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
           ___           ___           ___           &kp PSCRN     ___           ___               &kp INS       &kp TAB       &kp LT        &kp GT        ___           ___
      // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
